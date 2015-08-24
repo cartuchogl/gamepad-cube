@@ -1,0 +1,36 @@
+/* reset */
+* { margin:0; padding:0; } /* to remove the top and left whitespace */
+html, body { width:100%; height:100%; } /* just to be sure these are full screen*/
+canvas { display:block; } /* To remove the scrollbars */
+
+/* Blue print bg from: http://lea.verou.me/css3patterns/ */
+body {
+  background-color:#269;
+  background-image: linear-gradient(white 2px, transparent 2px),
+  linear-gradient(90deg, white 2px, transparent 2px),
+  linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+  background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+#controllers-list {
+    position: absolute;
+    top: 6px;
+    left:6px;
+    background-color: rgba(200,200,200,0.9)
+}
+
+/* styles for controller boxes */
+.axis-container, .button-container {
+  float: left;
+  border: 1px solid #aaa;
+  margin: 0.15em;
+  padding: 0.10em;
+}
+.buttonll {
+  width: 2em;
+}
+.controller-info h3 {
+  text-align: center;
+}

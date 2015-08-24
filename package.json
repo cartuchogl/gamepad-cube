@@ -1,0 +1,13 @@
+{
+    "name": "gamepad-cube"
+  , "version": "0.1.0"
+  , "description": "Example of use famepad web api to control a ebgl cube"
+  , "private": true
+  , "author": {
+      "name": "cartuchogl"
+    , "email": "carlos@urbin.es"
+  }
+  , "dependencies": {
+      "express": "4.x"
+  }
+}
