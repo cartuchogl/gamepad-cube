@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<title>C.U.B.E.</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<link rel="stylesheet" type="text/css" href="css/app.css"></link>
+
+<script type="text/javascript" src="js/three.js"></script>
+<script type="text/javascript" src="js/fpsmeter.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/app.three.js"></script>
+<script type="text/javascript" src="js/threex.rendererstats.js"></script>
+
+<script id="controller-info-template" type="text/template">
+    <div id="controller<%= index %>" class="controller-info">
+        <h3><%= index %>: <%= id %></h3>
+        <div class="buttons">
+            <% for(var c=0; c<buttons.length; c++) { %>
+                <div class="button-container">
+                <h5 class="label"><%= c %></h5>
+                <progress class="buttonll" max="1" value="0"></progress>
+                </div>
+            <% } %>
+        </div>
+        <div class="axes">
+            <% for(var c=0; c<axes.length; c++) { %>
+                <div class="axis-container">
+                <h5 class="label"></h5>
+                <progress class="axis" max="2" value=""></progress>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+</script>
+
+</head>
+
+<body>
+    <canvas id="three-canvas" style="border: none;" width="320" height="240"></canvas>
+    <div id="controllers-list"><h1>No controllers Found</h1></div>
+</body>
+
+</html>
